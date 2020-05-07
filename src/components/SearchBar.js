@@ -13,9 +13,6 @@ class SearchBar extends Component {
         this.props.onSubmit(this.state.term);
     }; 
 
-    // F_-rENL8Jj6n1qsUx5utWfFZ7AtPJlQ9bosGBbfC1so
-    // SEC qU10QaMPHkQUEcooSd9iR8QmTFKUkR9X6NsG1HROzaA
-
     render() {
         return (
             <div className="SearchBar">
