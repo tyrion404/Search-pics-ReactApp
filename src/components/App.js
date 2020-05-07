@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
-import Navbar from './Navbar';
-import SearchBar from './SearchBar';
 import unsplash from '../API/unsplash';
+import Navbar from './NavbarFooter/Navbar';
+import SearchBar from './SearchBar/SearchBar';
+import ImageList from './ImageList/ImageList';
+import GithubLogo from './NavbarFooter/GithubLogo';
 
 class App extends Component {
 
@@ -23,13 +25,13 @@ class App extends Component {
 
     render() {
         return (
-            <div style={{ background: '#FFFFFF', height: '100vh' }}>
+            <div style={{ background: '#FFFFFF' }}>
                 <Navbar />
                 <div className="ui container">
                     <SearchBar onSubmit={this.onSearchSubmit} />
-                    Found: {this.state.images.length} images
-                    <a className="github" href="https://github.com/tyrion404"><img alt="GitHub" src="images/git.png" height="24px" width="24px" /></a>
+                    <ImageList images={this.state.images} />
                 </div>
+                <GithubLogo />
             </div>
         );
     }

@@ -27,9 +27,3 @@
 textarea:focus, input:focus {
     outline: none;
 }
-
-.github{
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
