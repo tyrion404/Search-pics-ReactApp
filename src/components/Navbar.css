@@ -10,7 +10,7 @@ header {
 
 header a, header label {
 	display: block;
-	padding: 20px;
+	padding: 20px 20px 20px 0px;
 	color: #e2e2e2;
 	text-decoration: none;
 	line-height: 20px;
@@ -58,7 +58,7 @@ nav li {
 }
 
 nav a {
-	padding: 10px;
+	padding: 10px 0px 10px 10px;
 	width: 100%;
 }
 
@@ -81,7 +81,6 @@ nav a {
 	}
 	nav ul {
 		padding: 0;
-		padding-right: 10px;
 	}
 	nav li {
 		display: inline-block;
@@ -89,7 +88,7 @@ nav a {
 	}
 	header nav a {
 		display: inline-block;
-		padding: 20px 10px;
+		padding: 20px 0px 20px 10px;
 		width: auto;
 	}
 }

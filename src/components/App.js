@@ -5,12 +5,16 @@ import SearchBar from './SearchBar';
 // import Header from './SearchBar';
 
 class App extends Component {
+    onSearchSubmit = (term) => {
+        console.log(term);
+    };
+
     render() {
         return (
             <div style={{ background: '#FFFFFF', height: '100vh' }}>
                 <Navbar />
                 <div className="ui container">
-                    <SearchBar />
+                    <SearchBar onSubmit={this.onSearchSubmit} />
                 </div>
             </div>
         );
