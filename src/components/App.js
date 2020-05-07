@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
 import unsplash from '../API/unsplash';
-import Navbar from './NavbarFooter/Navbar';
+import Navbar from './Navbar/Navbar';
 import SearchBar from './SearchBar/SearchBar';
 import ImageList from './ImageList/ImageList';
-import GithubLogo from './NavbarFooter/GithubLogo';
 
 class App extends Component {
 
@@ -31,7 +30,6 @@ class App extends Component {
                     <SearchBar onSubmit={this.onSearchSubmit} />
                     <ImageList images={this.state.images} />
                 </div>
-                <GithubLogo />
             </div>
         );
     }

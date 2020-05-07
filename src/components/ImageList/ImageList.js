@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 
+import ImageCard from './ImageCard/ImageCard';
+import './ImageList.css';
+
 class ImageList extends Component {
     render() {
-        const Images = this.props.images.map(({ description, id, urls }) => {
-            return <img alt={description} key={id} src={urls.regular} height="300px" width="auto" />
+        const Images = this.props.images.map((image) => {
+            return <ImageCard key={image.id} image={image}/>
         });
         return (
-            <div>
+            <div className="image-list">
                 {Images}
             </div>
         )

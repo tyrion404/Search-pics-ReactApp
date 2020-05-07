@@ -12,7 +12,7 @@ class Navbar extends Component {
                     <label htmlFor="nav"></label>
                     <nav>
                         <ul>
-                            <li><a href="/">Home</a></li>
+                            <li><a href="https://xscotophilic.ml/">Author</a></li>
                         </ul>
                     </nav>
                 </div>
